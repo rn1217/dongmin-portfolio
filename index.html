@@ -1,0 +1,763 @@
+<!DOCTYPE html><html class="dark" lang="ko" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>구동민 | 신입 AI 개발자 포트폴리오</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-low":"#181c24","tertiary":"#adc6ff","inverse-on-surface":"#2c3039","on-tertiary-fixed":"#001a42","primary-fixed":"#dbe1ff","secondary":"#4cd7f6","surface-variant":"#31353e","slate-subtle-border":"rgba(148, 163, 184, 0.12)","on-secondary-container":"#00424e","badge-rag-text":"#93C5FD","surface-tint":"#b4c5ff","outline":"#8d90a0","primary-container":"#2563eb","slate-border":"#334155","text-primary":"#F8FAFC","outline-variant":"#434655","status-success":"#10B981","inverse-surface":"#dfe2ee","on-surface":"#dfe2ee","on-tertiary-container":"#edf0ff","primary-fixed-dim":"#b4c5ff","on-secondary-fixed":"#001f26","error-container":"#93000a","badge-rag-bg":"rgba(37, 99, 235, 0.12)","surface-container-high":"#262a33","badge-agent-bg":"rgba(6, 182, 212, 0.12)","secondary-fixed":"#acedff","on-primary-container":"#eeefff","slate-elevated":"#1E293B","surface-bright":"#353942","on-secondary":"#003640","tertiary-container":"#0f69dc","tertiary-fixed-dim":"#adc6ff","on-error-container":"#ffdad6","surface-container-lowest":"#0a0e16","on-secondary-fixed-variant":"#004e5c","on-surface-variant":"#c3c6d7","tertiary-fixed":"#d8e2ff","text-secondary":"#94A3B8","slate-surface":"#111827","on-primary-fixed":"#00174b","on-primary":"#002a78","on-error":"#690005","on-tertiary-fixed-variant":"#004395","surface-container":"#1c2028","surface":"#0f131c","error":"#ffb4ab","surface-container-highest":"#31353e","primary":"#b4c5ff","text-muted":"#64748B","background":"#0f131c","inverse-primary":"#0053db","surface-dim":"#0f131c","badge-agent-text":"#67E8F9","secondary-container":"#03b5d3","on-primary-fixed-variant":"#003ea8","on-tertiary":"#002e6a","secondary-fixed-dim":"#4cd7f6","accent-cyan-glow":"rgba(6, 182, 212, 0.15)","on-background":"#dfe2ee","status-warning":"#F59E0B"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","margin-mobile":"1.25rem","space-md":"1rem","space-sm":"0.5rem","margin":"3rem","gutter":"1.5rem","space-xl":"2.5rem","space-xs":"0.25rem","gutter-mobile":"1rem"},fontFamily:{"headline-md":["Plus Jakarta Sans"],"metric-num":["Plus Jakarta Sans"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-caps":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-xl-mobile":["Plus Jakarta Sans"],"code-mono":["JetBrains Mono"],"display-xl":["Plus Jakarta Sans"],"body-md":["Inter"]},fontSize:{"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"metric-num":["36px",{lineHeight:"44px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-xl-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"code-mono":["13px",{lineHeight:"18px",letterSpacing:"-0.01em",fontWeight:"500"}],"display-xl":["48px",{lineHeight:"56px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-slate-subtle-border"><div class="h-16 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-xs text-on-surface hover:text-primary transition-colors" href="#profile"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-text-primary">구동민</span><span class="text-text-muted">|</span><span class="font-body-sm text-body-sm text-secondary font-medium">신입 AI 개발자</span></a></div><nav class="hidden md:flex items-center gap-space-xs"><a class="px-space-sm py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" href="#profile">소개</a><a class="px-space-sm py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" href="#skills">기술 역량</a><a class="px-space-sm py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" href="#food-commerce">프로젝트</a><a class="px-space-sm py-1.5 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" href="#experience">경험 및 이력</a></nav><div class="flex items-center gap-space-sm"><a class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container border border-slate-border text-text-primary font-body-sm text-[13px] transition-colors" href="https://github.com/rn1217/food-commerce-ai-assistant" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px] text-secondary">code</span><span class="">GitHub</span></a></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)]"><div class="flex flex-col w-full">
+<!-- Toast Feedback Element -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-16 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-slate-elevated text-on-surface shadow-2xl border border-slate-border" id="copy-toast">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm text-text-primary" id="toast-message">클립보드에 복사되었습니다.</span>
+</div>
+<!-- Hero Section -->
+<section class="relative w-full max-w-[1200px] mx-auto px-gutter pt-space-xl pb-space-lg overflow-hidden">
+<div class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-badge-agent-bg text-secondary border border-secondary/20 font-body-sm text-body-sm">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+식품·이커머스 서비스 지향 신입 AI 개발자
+</span>
+</div>
+<div class="space-y-space-md max-w-4xl">
+<h1 class="font-display-xl text-[34px] sm:text-display-xl tracking-tight text-text-primary leading-tight font-bold">
+데이터와 검증을 바탕으로 <br class="hidden sm:inline">
+<span class="bg-gradient-to-r from-primary-fixed via-secondary to-badge-rag-text bg-clip-text text-transparent">AI 기능을 서비스에 연결합니다.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-text-secondary leading-relaxed max-w-3xl">
+Python·FastAPI·MySQL을 활용한 서비스 개발, LLM API 연동, 검색 결과 검증, 오류 처리와 로그 기록 경험을 갖춘 신입 AI 개발자 <strong class="text-text-primary font-semibold">구동민</strong>입니다.
+</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-xl bg-primary-container text-on-primary-container hover:bg-tertiary-container transition-all shadow-md font-body-sm font-semibold" href="#food-commerce">
+<span class="">대표 프로젝트 보기</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-xl bg-surface-container-low border border-slate-border text-text-primary hover:bg-surface-container transition-colors font-body-sm" href="https://github.com/rn1217/food-commerce-ai-assistant" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">open_in_new</span>
+<span class="">GitHub 저장소</span>
+</a>
+<button class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-xl bg-surface-container-low border border-slate-border text-text-secondary hover:text-text-primary hover:bg-surface-container transition-colors font-code-mono text-code-mono" onclick="copyToClipboard('jokuk88@naver.com', '이메일 주소가 복사되었습니다: jokuk88@naver.com')" title="이메일 복사하기">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span class="">jokuk88@naver.com</span>
+</button>
+</div>
+<!-- 상단 핵심 수치 및 검증 요약 카드 -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low border border-slate-subtle-border flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-body-sm text-xs font-semibold text-text-secondary">자동 단위/통합 테스트</span>
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-metric-num text-2xl font-bold text-text-primary">60개 통과</div>
+<p class="font-body-sm text-xs text-text-muted mt-1 leading-snug">외부 LLM API 및 DB 모의(Mock) 처리 기반 로직 검증</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low border border-slate-subtle-border flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-body-sm text-xs font-semibold text-text-secondary">실제 DB 검색 정합성</span>
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-metric-num text-2xl font-bold text-text-primary">15개 통과</div>
+<p class="font-body-sm text-xs text-text-muted mt-1 leading-snug">실제 MySQL DB 고정 조건별 상품 ID 및 정렬 순서 일치</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low border border-slate-subtle-border flex flex-col justify-between">
+<div class="flex items-center justify-between text-status-success">
+<span class="font-body-sm text-xs font-semibold text-text-secondary">공인 데이터 자격</span>
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-metric-num text-2xl font-bold text-text-primary">2개 보유</div>
+<p class="font-body-sm text-xs text-text-muted mt-1 leading-snug">SQLD(SQL 개발자) 및 빅데이터분석기사 공인 취득</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low border border-slate-subtle-border flex flex-col justify-between">
+<div class="flex items-center justify-between text-primary">
+<span class="font-body-sm text-xs font-semibold text-text-secondary">실제 자연어 HTTP 평가</span>
+<span class="material-symbols-outlined text-[20px]">network_check</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-metric-num text-2xl font-bold text-text-primary">3개 통과</div>
+<p class="font-body-sm text-xs text-text-muted mt-1 leading-snug">HTTP 종단점·Gemini 연동·DB 조회·ai_logs 기록 확인</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Divider -->
+<div class="w-full max-w-[1200px] mx-auto px-gutter py-space-xs flex items-center gap-space-md">
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+<span class="font-body-sm text-xs text-text-muted tracking-wide font-medium">프로필 및 일하는 방식</span>
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+</div>
+<!-- 프로필 및 일하는 방식 -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-lg" id="profile">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- 인적사항 카드 (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low border border-slate-subtle-border rounded-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<img src="portfolio-media/profile.jpg" alt="구동민 프로필 사진" width="56" height="72" loading="lazy" decoding="async" class="shrink-0 rounded-xl border border-slate-border" style="display:block;width:56px;height:72px;object-fit:cover;object-position:center;">
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-text-primary font-semibold">구동민</h2>
+<span class="font-body-sm text-body-sm text-text-muted">(具東珉)</span>
+</div>
+<p class="font-body-sm text-secondary">신입 AI 개발자 / 서비스 데이터 엔지니어</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+식품·이커머스 서비스에서 발생할 수 있는 복합 탐색 요구를 정형화된 데이터와 견고한 API 로직으로 해결하고자 합니다. 
+모델의 생성 결과에 전적으로 의존하지 않고 시스템 레벨의 검증 단계를 반드시 배치합니다.
+</p>
+<div class="space-y-space-xs font-body-sm text-body-sm">
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container">
+<span class="text-text-muted">학력</span>
+<span class="text-text-primary text-right font-medium">전남대학교 인공지능학부 소프트웨어전공 졸업</span>
+</div>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container">
+<span class="text-text-muted">거주지</span>
+<span class="text-text-primary text-right">광주광역시 광산구</span>
+</div>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container">
+<span class="text-text-muted">병역 사항</span>
+<span class="text-text-primary">면제 (시력 사유)</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full flex items-center justify-between p-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-left" onclick="copyToClipboard('010-6379-0573', '연락처가 복사되었습니다: 010-6379-0573')">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-text-muted">call</span>
+<span class="font-code-mono text-body-sm text-text-primary">010-6379-0573</span>
+</div>
+<span class="text-xs text-secondary font-medium">복사</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-left" onclick="copyToClipboard('jokuk88@naver.com', '이메일이 복사되었습니다: jokuk88@naver.com')">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-text-muted">mail</span>
+<span class="font-code-mono text-body-sm text-text-primary">jokuk88@naver.com</span>
+</div>
+<span class="text-xs text-primary font-medium">복사</span>
+</button>
+</div>
+</div>
+<!-- 일하는 방식 3가지 (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-slate-subtle-border">
+<div class="flex items-start gap-space-md">
+<div class="p-2 rounded-lg bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-[24px]">fact_check</span>
+</div>
+<div class="space-y-1">
+<span class="text-xs font-semibold text-secondary">일하는 방식 01</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">불확실성을 줄이는 기준과 체크리스트 기반 검증</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed pt-1">
+가정이나 모호한 감에 기대지 않고 확인이 필요한 항목을 명문화된 기준과 테스트 케이스로 전환합니다. 
+운영 단계에서 발생할 수 있는 데이터 결측이나 예외를 사전에 점검 목록으로 정의하여 누락 없는 시스템을 구축합니다.
+</p>
+</div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-slate-subtle-border">
+<div class="flex items-start gap-space-md">
+<div class="p-2 rounded-lg bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-[24px]">schema</span>
+</div>
+<div class="space-y-1">
+<span class="text-xs font-semibold text-secondary">일하는 방식 02</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">LLM의 추론과 시스템 검색(SQL/DB)의 명확한 역할 분리</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed pt-1">
+LLM에게 임의의 SQL 생성이나 상품 DB 직접 조작을 맡기지 않습니다. LLM은 '조건 JSON 추출'과 '자연어 설명 작성'에만 집중시키고, 실제 데이터 조회와 정렬은 백엔드에서 매개변수 바인딩 SQL로 안전하게 격리합니다.
+</p>
+</div>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-slate-subtle-border">
+<div class="flex items-start gap-space-md">
+<div class="p-2 rounded-lg bg-surface-container-high text-tertiary">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<div class="space-y-1">
+<span class="text-xs font-semibold text-secondary">일하는 방식 03</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-semibold">요청 ID와 로그를 통한 장애 추적 및 재현 가능성 확보</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed pt-1">
+모든 자연어 검색 및 FAQ 요청에 고유 request_id를 발급하여 지연 시간, 외부 API 오류, 파싱 실패 내역을 DB에 기록합니다. 이상 발생 시 로그를 통해 원인을 특정하고 동일 조건으로 재현 가능한 개선책을 마련합니다.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Divider -->
+<div class="w-full max-w-[1200px] mx-auto px-gutter py-space-xs flex items-center gap-space-md">
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+<span class="font-body-sm text-xs text-text-muted tracking-wide font-medium">기술 역량 및 실제 사용처</span>
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+</div>
+<!-- 기술 역량 섹션 -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-lg" id="skills">
+<div class="flex flex-col gap-space-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-bold tracking-tight">기술 스택과 실제 적용 범위</h2>
+<p class="font-body-md text-body-md text-text-secondary mt-1">포트폴리오 및 캡스톤 프로젝트에서 직접 코드로 다루고 검증한 영역입니다.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- 언어 & 프레임워크 -->
+<div class="bg-surface-container-low border border-slate-subtle-border rounded-xl p-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold">언어 및 백엔드</h3>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-badge-agent-bg text-badge-agent-text font-code-mono text-xs">Python</span>
+<span class="px-2 py-0.5 rounded bg-badge-agent-bg text-badge-agent-text font-code-mono text-xs">FastAPI</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">Pydantic</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">HTML/JS</span>
+</div>
+<ul class="text-body-sm text-xs text-text-secondary space-y-1.5 pt-2 leading-relaxed">
+<li class="">• <strong>FastAPI:</strong> 검색/FAQ REST API 엔드포인트 설계 및 예외 처리기 구현</li>
+<li class="">• <strong>Pydantic:</strong> 요청 스키마 유효성 검사 및 정형 응답 DTO 규격화</li>
+<li class="">• <strong>Vanilla JS/HTML:</strong> 로컬 환경 기능 검증용 테스트 UI 구현</li>
+</ul>
+</div>
+</div>
+<!-- 데이터베이스 & 처리 -->
+<div class="bg-surface-container-low border border-slate-subtle-border rounded-xl p-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">database</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold">데이터베이스 및 처리</h3>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-badge-rag-bg text-badge-rag-text font-code-mono text-xs">MySQL</span>
+<span class="px-2 py-0.5 rounded bg-badge-rag-bg text-badge-rag-text font-code-mono text-xs">pandas</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">SQL</span>
+</div>
+<ul class="text-body-sm text-xs text-text-secondary space-y-1.5 pt-2 leading-relaxed">
+<li class="">• <strong>MySQL:</strong> 인덱스·CHECK 제약 조건 스키마 설계, 매개변수 바인딩(%s) 안전 조회</li>
+<li class="">• <strong>pandas:</strong> 식품 30종 CSV 유효성 검증(가격 범위, 결측치, 무결성) 및 적재 파이프라인 분리</li>
+</ul>
+</div>
+</div>
+<!-- AI 연동 & 분석 -->
+<div class="bg-surface-container-low border border-slate-subtle-border rounded-xl p-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold">AI 연동 및 검색</h3>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded bg-badge-agent-bg text-badge-agent-text font-code-mono text-xs">Gemini REST API</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">Chroma DB</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">LangChain</span>
+</div>
+<ul class="text-body-sm text-xs text-text-secondary space-y-1.5 pt-2 leading-relaxed">
+<li class="">• <strong>Gemini Flash-Lite:</strong> 시스템 프롬프트 기반 자연어 조건 JSON 구조화 및 상품 추천 사유 생성</li>
+<li class="">• <strong>RAG 파이프라인:</strong> 산업 문서 검색 챗봇(DecaMind)에서 벡터 인덱싱 및 유사도 검색 플로우 연동</li>
+</ul>
+</div>
+</div>
+<!-- 공인 자격증 -->
+<div class="bg-surface-container-low border border-slate-subtle-border rounded-xl p-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2 text-status-success">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold">공인 데이터 자격</h3>
+</div>
+<div class="space-y-2 pt-1">
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<div>
+<div class="text-body-sm text-xs font-semibold text-text-primary">SQLD (SQL 개발자)</div>
+<div class="text-[11px] text-text-muted">한국데이터산업진흥원</div>
+</div>
+<span class="text-[11px] text-status-success font-medium">취득</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<div>
+<div class="text-body-sm text-xs font-semibold text-text-primary">빅데이터분석기사</div>
+<div class="text-[11px] text-text-muted">한국데이터산업진흥원</div>
+</div>
+<span class="text-[11px] text-status-success font-medium">취득</span>
+</div>
+</div>
+<p class="text-body-sm text-[11px] text-text-muted pt-1">
+관계형 데이터 모델링 및 통계 분석에 대한 공인 이론·실무 기준 검증 완료
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Divider -->
+<div class="w-full max-w-[1200px] mx-auto px-gutter py-space-xs flex items-center gap-space-md">
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+<span class="font-body-sm text-xs text-text-muted tracking-wide font-medium">프로젝트</span>
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+</div>
+<!-- 프로젝트 섹션 -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-lg space-y-space-xl">
+<!-- [제1순위 대표 프로젝트: Food Commerce AI Assistant] -->
+<div class="rounded-xl bg-surface-container-low border border-slate-border p-space-lg lg:p-space-xl space-y-space-lg" id="food-commerce">
+<!-- 프로젝트 헤더 -->
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md border-b border-slate-subtle-border pb-space-md">
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-primary-container text-on-primary-container font-medium text-xs">대표 프로젝트</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-text-secondary text-xs">개인 학습·포트폴리오 프로젝트 (AI 코딩 도구 활용, 로컬 MVP 구현)</span>
+</div>
+<h3 class="font-headline-lg text-2xl sm:text-headline-lg font-bold text-text-primary mt-2">
+Food Commerce AI Assistant
+</h3>
+<p class="font-body-md text-body-md text-secondary mt-1">
+자연어 상품 조건을 구조화하고 MySQL에 등록한 가상 상품을 검색해, LLM이 추천 이유와 FAQ 답변을 제공하는 로컬 웹 서비스
+</p>
+<p class="font-body-sm text-xs text-text-muted mt-1">
+• 직접 구성한 시연 데이터: 가상 상품 30개 (4,500원 ~ 65,000원 구간), 가상 정책 기반 공통 FAQ 10개. 실제 판매 상품·기업 정책·거래·고객 데이터는 사용하지 않았습니다.
+</p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0">
+<a class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high hover:bg-slate-elevated border border-slate-border text-text-primary text-xs font-medium transition-colors" href="https://github.com/rn1217/food-commerce-ai-assistant" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-secondary">open_in_new</span>
+<span class="">GitHub 저장소 바로가기</span>
+</a>
+</div>
+</div>
+<!-- 프로젝트의 목표와 구현 범위 -->
+<div class="p-space-md rounded-xl bg-surface-container border border-slate-subtle-border" id="food-commerce-scope">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary">프로젝트 목표와 구현 범위</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-2 leading-relaxed">
+식품 이커머스 상황을 가정해 <strong class="text-text-primary">AI API 연동과 백엔드 설계·검증</strong>을 연습하고 구현한 개인 프로젝트입니다. 자연어 조건 추출, DB 검색, 근거 기반 응답, 예외 처리와 로그 기록까지 이어지는 흐름에 집중했습니다.
+</p>
+<p class="font-body-sm text-body-sm text-text-secondary mt-2 leading-relaxed">
+사용자 화면은 검색·FAQ 기능을 확인하기 위한 시연용으로 구성했습니다. 상품 상세 페이지, 장바구니, 주문·결제 기능은 이번 구현 범위에 포함하지 않았습니다.
+</p>
+</div>
+<!-- 상세 구성 1: 로컬 서비스 시연 영상 및 문서 -->
+<div class="space-y-space-md"><div class="grid grid-cols-1 md:grid-cols-2 gap-space-md"><div class="flex flex-col bg-surface-container rounded-xl border border-slate-subtle-border overflow-hidden shadow-lg"><div class="flex items-center justify-between px-3 py-2 bg-surface-container-high border-b border-slate-subtle-border"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary">search</span><span class="font-headline-sm text-xs font-semibold text-text-primary">자연어 상품 검색 &amp; 추천</span></div><span class="text-[11px] font-code-mono text-secondary bg-badge-agent-bg px-2 py-0.5 rounded">POST /api/products/search</span></div><div class="p-2 bg-surface-container-lowest flex items-center justify-center"><video controls muted playsinline preload="metadata" aria-label="상품 검색과 AI 추천 시연" poster="portfolio-media/product-poster.png" class="w-full h-auto rounded border border-slate-border object-contain max-h-[380px]" style="display:block;background:#080c12"><source src="portfolio-media/product-silent.mp4" type="video/mp4">영상을 재생할 수 없다면 <a href="portfolio-media/product-silent.mp4">시연 영상 열기</a></video></div><div class="p-3 bg-surface-container"><p class="font-headline-sm text-xs font-semibold text-text-primary">상품 검색 및 AI 추천 시연</p><p class="font-body-sm text-[11px] text-text-secondary mt-0.5">재생 버튼을 눌러 확인하세요. 전체화면으로 크게 볼 수 있습니다. (무음)</p></div></div><div class="flex flex-col bg-surface-container rounded-xl border border-slate-subtle-border overflow-hidden shadow-lg"><div class="flex items-center justify-between px-3 py-2 bg-surface-container-high border-b border-slate-subtle-border"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">live_help</span><span class="font-headline-sm text-xs font-semibold text-text-primary">공통 FAQ 질의 및 출처 인용</span></div><span class="text-[11px] font-code-mono text-primary bg-badge-rag-bg px-2 py-0.5 rounded">POST /api/faq/answer</span></div><div class="p-2 bg-surface-container-lowest flex items-center justify-center"><video controls muted playsinline preload="metadata" aria-label="FAQ 질문과 근거 답변 시연" poster="portfolio-media/faq-poster.png" class="w-full h-auto rounded border border-slate-border object-contain max-h-[380px]" style="display:block;background:#080c12"><source src="portfolio-media/faq-silent.mp4" type="video/mp4">영상을 재생할 수 없다면 <a href="portfolio-media/faq-silent.mp4">시연 영상 열기</a></video></div><div class="p-3 bg-surface-container"><p class="font-headline-sm text-xs font-semibold text-text-primary">FAQ 질문 및 원문 기반 답변 시연</p><p class="font-body-sm text-[11px] text-text-secondary mt-0.5">재생 버튼을 눌러 확인하세요. 전체화면으로 크게 볼 수 있습니다. (무음)</p></div></div></div><div class="p-space-md rounded-xl bg-surface-container border border-slate-subtle-border flex flex-col md:flex-row md:items-center justify-between gap-space-sm"><div><h4 class="font-headline-sm text-xs font-semibold text-text-primary flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-primary">description</span>저장소 기술 문서 및 검증 보고서 (Docs)</h4><p class="font-body-sm text-[11px] text-text-secondary mt-0.5">* Live Demo 및 외부 배포 링크 미제공 (보안 및 API 비용 관리 목적의 로컬 실행 구조)</p></div><div class="flex flex-wrap items-center gap-2"><a class="inline-flex items-center gap-1 p-2 rounded bg-surface-container-low hover:bg-surface-container-high transition-colors font-code-mono text-xs text-text-primary border border-slate-subtle-border" href="https://github.com/rn1217/food-commerce-ai-assistant/blob/main/docs/architecture.md" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px] text-secondary">link</span>docs/architecture.md</a><a class="inline-flex items-center gap-1 p-2 rounded bg-surface-container-low hover:bg-surface-container-high transition-colors font-code-mono text-xs text-text-primary border border-slate-subtle-border" href="https://github.com/rn1217/food-commerce-ai-assistant/blob/main/docs/erd.md" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px] text-secondary">link</span>docs/erd.md</a><a class="inline-flex items-center gap-1 p-2 rounded bg-surface-container-low hover:bg-surface-container-high transition-colors font-code-mono text-xs text-text-primary border border-slate-subtle-border" href="https://github.com/rn1217/food-commerce-ai-assistant/blob/main/docs/evaluation/product-validation.md" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px] text-secondary">link</span>docs/evaluation/product-validation.md</a></div></div></div>
+<!-- 상세 구성 2: 해결하려는 문제 -->
+<div class="p-space-md rounded-xl bg-surface-container border border-slate-subtle-border">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">help_center</span>
+해결하려는 문제
+</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-2 leading-relaxed">
+가격, 포장 형태, 당도 등 복합적인 조건을 요구하는 고객에게 조건에 정확히 부합하는 식품을 제시하고, 단순 키워드 일치를 넘어 ‘왜 이 상품이 추천되었는지’ 사유를 함께 제공합니다. 
+동시에 배송 규정, 보관 방법 등 반복되는 공통 질의에는 미리 등록된 10개의 FAQ 원문 근거를 바탕으로 답변합니다. 
+<br><span class="text-xs text-text-muted">* 본 프로젝트는 로컬 검증 단계의 구현체로, 실제 서비스 환경에서의 매출 증대나 상담 문의 감소 효과는 측정하지 않았습니다.</span>
+</p>
+</div>
+<!-- 상세 구성 3: 핵심 설계와 데이터 흐름 (가로 스크롤 가능 처리) -->
+<div class="space-y-space-sm">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_tree</span>
+핵심 설계와 데이터 흐름 (SQL Injection 방지 및 역할 분리)
+</h4>
+<p class="font-body-sm text-xs text-text-secondary">
+LLM에게 임의의 SQL 조립을 맡기지 않고 조건 JSON만 추출하도록 역할을 한정하며, 백엔드에서 매개변수 바인딩(%s)으로 쿼리를 안전하게 수행합니다.
+</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-1">
+<!-- 상품 흐름 -->
+<div class="p-space-md rounded-xl bg-surface-container border border-slate-subtle-border space-y-2">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-headline-sm text-xs font-semibold">1) 복합 상품 검색 흐름</span>
+<span class="text-[11px] font-code-mono px-2 py-0.5 rounded bg-surface-container-high">POST /api/products/search</span>
+</div>
+<div class="overflow-x-auto pb-1">
+<div class="flex items-center gap-1.5 min-w-[500px] text-xs font-code-mono text-text-secondary pt-2">
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">사용자 요청</span>자연어 질의
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted">arrow_forward</span>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">FastAPI / LLM</span>조건 추출 &amp; JSON 검증
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted">arrow_forward</span>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">MySQL 검색</span>바인딩 조회 (ID 반환)
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted">arrow_forward</span>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">상위 3개 추천</span>LLM 사유 &amp; ID 검증
+</div>
+</div>
+</div>
+<p class="font-body-sm text-xs text-text-secondary leading-relaxed pt-1">
+MySQL 검색으로 반환된 상품 중 상위 3개 후보만을 LLM에 전달하여 추천 이유를 생성합니다. 
+생성된 텍스트 내 추천 상품 ID가 실제 검색 결과 ID와 완벽히 일치하는지 백엔드 검증을 거친 후 응답합니다.
+</p>
+</div>
+<!-- FAQ 흐름 -->
+<div class="p-space-md rounded-xl bg-surface-container border border-slate-subtle-border space-y-2">
+<div class="flex items-center justify-between text-primary">
+<span class="font-headline-sm text-xs font-semibold">2) 공통 FAQ 안내 흐름</span>
+<span class="text-[11px] font-code-mono px-2 py-0.5 rounded bg-surface-container-high">POST /api/faq/answer</span>
+</div>
+<div class="overflow-x-auto pb-1">
+<div class="flex items-center gap-1.5 min-w-[500px] text-xs font-code-mono text-text-secondary pt-2">
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">사용자 요청</span>배송·보관 질의
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted">arrow_forward</span>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">MySQL FAQ 조회</span>키워드 점수 계산
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted">arrow_forward</span>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">최대 3개 원문</span>LLM 답변 생성
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted">arrow_forward</span>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border text-center flex-1">
+<span class="text-text-primary block font-medium">출처 검증</span>ID 일치 시 최종 반환
+</div>
+</div>
+</div>
+<p class="font-body-sm text-xs text-text-secondary leading-relaxed pt-1">
+사용자 질문과 직접 작성한 가상 정책 FAQ 간 키워드 적합도를 계산하여 최대 3개의 관련 FAQ 원문을 선별합니다. 
+LLM은 제공된 원문 안에서만 요약 및 답변을 작성하며 인용 출처 ID의 존재 여부를 검증합니다.
+</p>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container text-xs text-text-secondary flex flex-col sm:flex-row sm:items-center justify-between gap-2 border border-slate-subtle-border">
+<div class="">
+<span class="font-code-mono text-secondary font-medium">ai_logs 추적 체계:</span> 모든 요청은 고유 <code class="text-text-primary font-code-mono">request_id</code>를 발급받아 총 처리 시간(Latency), 외부 호출 상태, 발생 오류를 DB에 영구 기록.
+</div>
+<div class="">
+<span class="font-code-mono text-primary font-medium">데이터 적재 분리:</span> 상품 CSV 30건 → pandas 유효성 검사 스크립트 → DB 초기화 단계로 분리.
+</div>
+</div>
+</div>
+<!-- 상세 구성 4: 대표 문제 해결 사례 (로그 기반 추적) -->
+<div class="p-space-md rounded-xl bg-surface-container border border-slate-subtle-border space-y-space-sm">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-status-warning text-[20px]">troubleshoot</span>
+대표 문제 해결 사례: 로그 기반 오류 분석 및 프롬프트 규칙 개선
+</h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-1">
+<div class="p-3 rounded-lg bg-surface-container-low border border-slate-subtle-border space-y-1">
+<span class="text-xs font-semibold text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">error</span> 문제 상황
+</span>
+<p class="font-body-sm text-xs text-text-secondary leading-relaxed">
+'선물용인데 너무 달지 않고 개별포장된 상품 추천해줘'라는 정상적인 복합 질의에서 상품이 0건으로 반환되는 현상 발생.
+</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low border border-slate-subtle-border space-y-1">
+<span class="text-xs font-semibold text-status-warning flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">manage_search</span> 원인 로그 분석
+</span>
+<p class="font-body-sm text-xs text-text-secondary leading-relaxed">
+<code class="text-text-primary font-code-mono">ai_logs</code> 확인 결과, 선물·포장·당도 조건은 정상 파싱되었으나 사용자 서술어인 '추천' 단어가 미지원 속성(unsupported)으로 오분류되어 전체 쿼리가 중단됨.
+</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low border border-slate-subtle-border space-y-1">
+<span class="text-xs font-semibold text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">check_circle</span> 개선 조치 및 검증
+</span>
+<p class="font-body-sm text-xs text-text-secondary leading-relaxed">
+미지원 조건 차단 로직을 우회하지 않고, 프롬프트에 요청 동사와 상품 속성의 엄밀한 구분 규칙 및 복합 질문 예시를 보강.
+</p>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-high/60 border border-slate-subtle-border flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+<div class="">
+<strong class="text-text-primary">재실행 검증 결과:</strong> 동일 Gemini Flash-Lite 모델에서 고정 3개 개발 질문 재실행 시 2/3 → <span class="text-status-success font-semibold">3/3 통과</span>.
+<span class="text-text-muted block sm:inline sm:ml-1">(※ 개발용 고정 사례에 대한 회귀 검증이며, 일반 자연어 전체의 정확도 지표가 아님)</span>
+</div>
+<div class="text-text-secondary shrink-0">
+<strong>보조 대응:</strong> 503/타임아웃 감지 시 1초 대기 후 1회 재시도 정책 및 Flash-Lite 모델 전환
+</div>
+</div>
+</div>
+<!-- 상세 구성 5: 검증 결과 표 (명확한 조건 병기) -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">grading</span>
+단계별 검증 결과 및 관측 수치
+</h4>
+<span class="text-xs text-text-muted">* 개별 테스트 목적과 환경에 맞추어 분리 기록 (합산 왜곡 배제)</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs border-collapse min-w-[640px]">
+<thead>
+<tr class="border-b border-slate-border text-text-muted bg-surface-container">
+<th class="py-2.5 px-3 font-medium">검증 분류</th>
+<th class="py-2.5 px-3 font-medium">검증 대상 및 수행 환경</th>
+<th class="py-2.5 px-3 font-medium">합격/통과 수치</th>
+<th class="py-2.5 px-3 font-medium">비고 및 유의 사항</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-subtle-border text-text-secondary">
+<tr>
+<td class="py-2.5 px-3 font-semibold text-text-primary">자동 테스트</td>
+<td class="py-2.5 px-3">FastAPI 엔드포인트 로직, 유효성 검사기 (외부 API·DB 모의 Mock 처리)</td>
+<td class="py-2.5 px-3 font-code-mono text-status-success font-semibold">60 / 60 통과</td>
+<td class="py-2.5 px-3 text-text-muted">외부 통신 제외 환경에서의 내부 파이프라인 무결성 확인</td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-semibold text-text-primary">실제 MySQL 검색</td>
+<td class="py-2.5 px-3">가상 식품 30개 대상 15가지 고정 조건 질의 (실제 DB 연결)</td>
+<td class="py-2.5 px-3 font-code-mono text-status-success font-semibold">15 / 15 통과</td>
+<td class="py-2.5 px-3 text-text-muted">고정 조건별 기대 상품 ID 목록 및 정렬 순서 완전 일치</td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-semibold text-text-primary">실제 자연어 HTTP 평가</td>
+<td class="py-2.5 px-3">실제 Gemini REST API 호출 + DB 조회 + ai_logs 기록 종단 검증</td>
+<td class="py-2.5 px-3 font-code-mono text-status-success font-semibold">3 / 3 통과</td>
+<td class="py-2.5 px-3 text-text-muted">실제 외부 모델 호출 및 추천 사유 생성 성공</td>
+</tr>
+<tr>
+<td class="py-2.5 px-3 font-semibold text-text-primary">단일 관측 지연 시간</td>
+<td class="py-2.5 px-3">자연어 HTTP 고정 3개 질문 단일 실행 시 응답 시간 (ai_logs 기록)</td>
+<td class="py-2.5 px-3 font-code-mono text-text-primary">6.49s / 6.84s / 7.25s</td>
+<td class="py-2.5 px-3 text-text-muted">단일 관측값이며 평균 SLA 지표가 아님 (Gemini 통신 포함)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 상세 구성 6: 현재 한계와 향후 개선 -->
+<div class="p-space-md rounded-xl bg-surface-container border border-slate-subtle-border">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[18px]">build_circle</span>
+현재 한계 및 향후 개선 과제
+</h4>
+<ul class="text-body-sm text-xs text-text-secondary space-y-1.5 mt-2 leading-relaxed">
+<li class="">• <strong>데이터 및 운영 검증 범위:</strong> 직접 구성한 소규모 가상 데이터와 로컬 환경에서 기능을 검증했습니다. 실제 판매 데이터의 변동, 고객 질문의 다양성, 다수 사용자 동시 접속에 대한 운영 성능은 검증하지 않았습니다. 실서비스 적용 전에는 실제 데이터에 맞춘 검증과 부하 테스트가 필요합니다.</li>
+<li class="">• <strong>가성비 지표의 단순화:</strong> 현 데이터셋에 단위 중량/용량 데이터가 부재하여, 가성비 요청을 단순 판매가 오름차순으로 처리함. 향후 단위당 단가(g당 가격) 스키마 추가 필요.</li>
+<li class="">• <strong>추천 문장의 사실성 보증 범위:</strong> 추천 상품 ID 일치 여부는 백엔드에서 강제 검증하나, LLM이 생성한 자연어 문장 자체의 세부 묘사까지 100% 사실임을 보증하진 못함. 후처리 룰셋 고도화 필요.</li>
+<li class="">• <strong>일반화 성능 검증:</strong> 현재는 3개의 고정 자연어 사례 위주로 검증되었으므로, 향후 미공개 평가 데이터셋을 체계적으로 수집하여 오분류율을 모니터링할 예정.</li>
+</ul>
+</div>
+</div>
+<!-- [제2순위 보조 프로젝트: DecaMind (산업 문서 검색 챗봇)] -->
+<div class="rounded-xl bg-surface-container-low border border-slate-subtle-border p-space-lg lg:p-space-xl space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md border-b border-slate-subtle-border pb-space-sm">
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-secondary text-xs">산학협력 캡스톤디자인</span>
+<span class="text-xs text-text-muted"><span class="text-primary">오이솔루션</span> 협력 (2025.06 최종 발표)</span>
+</div>
+<h3 class="font-headline-lg text-xl sm:text-headline-lg font-bold text-text-primary mt-1.5">
+DecaMind : RAG 기반 사내 산업 문서 검색 챗봇
+</h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+방대한 사내 기술 문서와 절차서 탐색 지연을 줄이기 위한 벡터 검색 기반 RAG 챗봇 시스템 구축
+</p>
+</div>
+<div class="flex flex-wrap gap-1.5 shrink-0">
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">React</span>
+<span class="px-2 py-0.5 rounded bg-badge-rag-bg text-badge-rag-text font-code-mono text-xs">RESTful API Spec</span>
+<span class="px-2 py-0.5 rounded bg-badge-agent-bg text-badge-agent-text font-code-mono text-xs">Chroma DB</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-muted font-code-mono text-xs">LangChain</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- 본인 역할 -->
+<div class="lg:col-span-7 space-y-2">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary">담당 엔지니어링 역할</h4>
+<div class="space-y-1.5 text-xs text-text-secondary leading-relaxed">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<strong class="text-text-primary block mb-0.5">1) React 프론트엔드 UI 개발:</strong>
+대화형 챗봇 인터페이스, 질의응답 세션 분기, 이전 히스토리 삭제/수정, 마크다운 형태 응답 렌더링 구현.
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<strong class="text-text-primary block mb-0.5">2) 백엔드 연동 RESTful API 규격 설계:</strong>
+<span class="text-primary">오이솔루션</span> 실무진 및 백엔드 개발자와 질의·임베딩 문서 컨텍스트 교환 JSON 스키마를 주도적으로 정의하고 예외 응답 규격화.
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<strong class="text-text-primary block mb-0.5">3) 사용자 편의 기능 및 검색 플로우 지원:</strong>
+답변 찜(북마크), 원클릭 복사, LangChain 및 Chroma DB 기반 RAG 검색 결과 연계 테스트.
+</div>
+</div>
+</div>
+<!-- 평가 결과 (있는 그대로의 분포 표기) -->
+<div class="lg:col-span-5 bg-surface-container rounded-xl p-space-md space-y-2">
+<h4 class="font-headline-sm text-body-md font-semibold text-text-primary"><span class="text-primary">오이솔루션</span> 사내 임직원 검증 평가 결과</h4>
+<p class="text-xs text-text-secondary">사내 직원을 대상으로 진행된 무작위 산업 규격 질의 실증 테스트 원래 분포</p>
+<div class="grid grid-cols-3 gap-2 py-2 text-center">
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border">
+<div class="font-code-mono font-bold text-secondary text-sm">36.7%</div>
+<div class="text-[11px] text-text-muted mt-0.5">우수</div>
+</div>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border">
+<div class="font-code-mono font-bold text-primary text-sm">53.3%</div>
+<div class="text-[11px] text-text-muted mt-0.5">보통</div>
+</div>
+<div class="p-2 rounded bg-surface-container-low border border-slate-subtle-border">
+<div class="font-code-mono font-bold text-text-muted text-sm">10.0%</div>
+<div class="text-[11px] text-text-muted mt-0.5">부적절</div>
+</div>
+</div>
+<p class="text-[11px] text-text-muted leading-relaxed">
+* 자의적 합산 없이 분포를 그대로 기록함. 10%의 부적절 응답은 표 형식 및 복합 도면 데이터의 청킹 유실에서 기인함을 확인하고 후속 메타데이터 필터링 개선점을 도출했습니다.
+</p>
+</div>
+</div>
+</div>
+<!-- [제3순위 보조 경험: KB-Bridge 금융 데이터 분석 & AI Agent 과정] -->
+<div class="rounded-xl bg-surface-container-low border border-slate-subtle-border p-space-lg space-y-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-subtle-border pb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-badge-agent-bg text-secondary text-xs font-medium">교육 과정</span>
+<span class="text-xs text-text-muted">2026.08 ~ 2026.11 (진행 중)</span>
+</div>
+<h3 class="font-headline-sm text-body-md font-bold text-text-primary mt-1">
+KB-Bridge 금융 데이터 분석 &amp; AI Agent 과정
+</h3>
+</div>
+<div class="flex gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">SQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">pandas</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-text-primary font-code-mono text-xs">NumPy</span>
+</div>
+</div>
+<p class="font-body-sm text-xs text-text-secondary leading-relaxed">
+금융 도메인 실무 정량 데이터 기반의 통계 집계 및 분석 워크플로우를 실습하고 있습니다. 
+대용량 트랜잭션 데이터 전처리를 위한 SQL 쿼리 최적화와 pandas 파이프라인 구성, LLM 기반 자동 분석 워크플로우 결합을 중점적으로 학습하고 있습니다.
+</p>
+</div>
+</section>
+<!-- Section Divider -->
+<div class="w-full max-w-[1200px] mx-auto px-gutter py-space-xs flex items-center gap-space-md">
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+<span class="font-body-sm text-xs text-text-muted tracking-wide font-medium">학력 및 업무 표준화 경험</span>
+<div class="h-[1px] flex-1 bg-surface-variant"></div>
+</div>
+<!-- 학력 및 사회경험 (이력 및 표준화 경험) -->
+<section class="w-full max-w-[1200px] mx-auto px-gutter py-space-lg" id="experience">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- 학력 (6 cols) -->
+<div class="lg:col-span-6 bg-surface-container-low border border-slate-subtle-border rounded-xl p-space-lg space-y-space-md">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[22px]">school</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-text-primary">학력 및 교육 이력</h3>
+</div>
+<div class="space-y-space-md border-l border-slate-border pl-4 ml-2">
+<div class="space-y-1">
+<div class="text-xs text-secondary font-code-mono">2026.08 ~ 2026.11 (수료 예정)</div>
+<h4 class="font-headline-sm text-body-sm font-semibold text-text-primary">KB-Bridge AI 및 금융 데이터 분석 과정</h4>
+<p class="text-xs text-text-secondary leading-relaxed">금융 데이터 집계 분석 및 AI 에이전트 연동 워크플로우 실습</p>
+</div>
+<div class="space-y-1">
+<div class="text-xs text-text-muted font-code-mono">2021.03 ~ 2026.08 (졸업)</div>
+<h4 class="font-headline-sm text-body-sm font-semibold text-text-primary">전남대학교 (Gwangju)</h4>
+<p class="text-xs text-text-primary">AI융합대학 인공지능학부 소프트웨어전공</p>
+<p class="text-xs text-text-secondary leading-relaxed">
+인공지능, 데이터베이스 설계, 알고리즘, 캡스톤디자인 이수 (학점: 2.80 / 4.5)
+</p>
+</div>
+<div class="space-y-1">
+<div class="text-xs text-text-muted font-code-mono">2018.03 ~ 2021.02 (졸업)</div>
+<h4 class="font-headline-sm text-body-sm font-semibold text-text-primary">전남고등학교 (Gwangju)</h4>
+<p class="text-xs text-text-secondary">인문계열 졸업</p>
+</div>
+</div>
+</div>
+<!-- 사회경험 및 업무 표준화 경험 (6 cols) -->
+<div class="lg:col-span-6 bg-surface-container-low border border-slate-subtle-border rounded-xl p-space-lg space-y-space-md">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[22px]">checklist</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-text-primary">현장 경험과 업무 표준화 태도</h3>
+</div>
+<div class="space-y-space-sm">
+<div class="p-3 rounded-lg bg-surface-container border border-slate-subtle-border space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-body-sm font-semibold text-text-primary">MGC메가커피 (음료 제조 및 매장 운영)</h4>
+<span class="text-xs text-text-muted font-code-mono">2024.08 ~ 2025.07</span>
+</div>
+<span class="inline-block text-[11px] text-secondary font-medium">1년 근무 / 레시피 체크리스트 매뉴얼화</span>
+<p class="text-xs text-text-secondary leading-relaxed pt-1">
+복잡하고 다양한 수십 가지 음료 제조 공정을 표준 체크리스트 형태로 정리하여 현장에 도입했습니다. 피크 타임 시 주문 누락과 제조 오류를 줄이고 일관된 품질을 유지하는 '업무 시스템화 및 매뉴얼 준수' 태도를 체득했습니다.
+</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container border border-slate-subtle-border space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-body-sm font-semibold text-text-primary">라이크앤 브런치카페</h4>
+<span class="text-xs text-text-muted font-code-mono">2023.04 ~ 2023.10</span>
+</div>
+<span class="inline-block text-[11px] text-text-muted font-medium">고객 응대 및 주방-홀 주문 동선 조율</span>
+<p class="text-xs text-text-secondary leading-relaxed pt-1">
+피크타임 대기 고객 응대 및 주방-홀 간 주문 전달 흐름을 점검해 대기 시간 불만을 경감했습니다.
+</p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container border border-slate-subtle-border space-y-1">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-body-sm font-semibold text-text-primary">롯데백화점</h4>
+<span class="text-xs text-text-muted font-code-mono">2021.06 ~ 2021.09</span>
+</div>
+<span class="inline-block text-[11px] text-text-muted font-medium">현장 안전 규정 준수 및 안내</span>
+<p class="text-xs text-text-secondary leading-relaxed pt-1">
+안전 관리 수칙을 준수하며 다수의 고객 동선을 안정적으로 유도하는 매뉴얼 기반 현장 대응을 경험했습니다.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-slate-subtle-border py-space-lg">
+<div class="max-w-[1200px] mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between gap-space-md text-xs text-text-secondary">
+<div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
+<span class="text-text-primary font-semibold">구동민</span>
+<span class="">•</span>
+<span class="">신입 AI 개발자 포트폴리오</span>
+<span class="">•</span>
+<span class="">© 2026 Gu Dongmin. All rights reserved.</span>
+</div>
+<div class="flex items-center gap-space-md font-code-mono">
+<a class="hover:text-secondary transition-colors" href="mailto:jokuk88@naver.com">jokuk88@naver.com</a>
+<span class="">/</span>
+<a class="hover:text-secondary transition-colors" href="https://github.com/rn1217/food-commerce-ai-assistant" rel="noopener noreferrer" target="_blank">GitHub Repository</a>
+</div>
+</div>
+</footer>
+<!-- Inline Toast Feedback Script -->
+<script>
+function copyToClipboard(text, customMessage) {
+  if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showToast(customMessage || '클립보드에 복사되었습니다.');
+    }).catch(function() {
+      fallbackCopy(text, customMessage);
+    });
+  } else {
+    fallbackCopy(text, customMessage);
+  }
+}
+
+function fallbackCopy(text, customMessage) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.position = "fixed";
+  textArea.style.left = "-999999px";
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  try {
+    document.execCommand('copy');
+    showToast(customMessage || '클립보드에 복사되었습니다.');
+  } catch (err) {
+    showToast('복사에 실패했습니다. 수동으로 복사해주세요.');
+  }
+  document.body.removeChild(textArea);
+}
+
+function showToast(message) {
+  var toast = document.getElementById('copy-toast');
+  var msgEl = document.getElementById('toast-message');
+  if (!toast || !msgEl) return;
+  msgEl.textContent = message;
+  toast.classList.remove('opacity-0', 'translate-y-16', 'pointer-events-none');
+  toast.classList.add('opacity-100', 'translate-y-0');
+  setTimeout(function() {
+    toast.classList.remove('opacity-100', 'translate-y-0');
+    toast.classList.add('opacity-0', 'translate-y-16', 'pointer-events-none');
+  }, 2600);
+}
+</script>
+
+
+</body></html>
