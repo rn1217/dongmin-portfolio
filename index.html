@@ -1,390 +1,89 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="ko"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>구동민 | 신입 AI 개발자 포트폴리오</title>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          },
-          colors: {
-            primary: '#18181b', // zinc-900
-            muted: '#71717a',   // zinc-500
-            subtle: '#a1a1aa',  // zinc-400
-            border: '#e4e4e7',  // zinc-200
-            surface: '#f8fafc', // slate-50
-            accent: '#2563eb',  // blue-600
-          }
-        }
-      }
-    };
-  </script>
-<style>
-    body {
-      font-family: 'Pretendard', -apple-system, sans-serif;
-      word-break: keep-all;
-      background-color: #ffffff;
-      color: #18181b;
-    }
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI·데이터 개발자 구동민의 프로젝트와 기술 역량">
+  <title>구동민 | AI·데이터 개발자</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#172033;--muted:#64748b;--line:#e2e8f0;--soft:#f6f8fc;--blue:#2457d6;--blue-soft:#edf3ff;--green:#16794b}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#fff;color:var(--ink);font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none} .wrap{width:min(100% - 40px,920px);margin:auto} .topbar{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)} .topbar-in{height:60px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:-.03em}.nav{display:flex;gap:24px;color:var(--muted);font-size:13px}.nav a:hover{color:var(--blue)}
+    main{padding:52px 0 40px}.hero{display:grid;grid-template-columns:1fr 164px;gap:44px;align-items:center;padding:10px 0 42px;border-bottom:1px solid var(--line)}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.04em}.dot{width:7px;height:7px;background:var(--blue);border-radius:50%}.hero h1{margin:16px 0 14px;font-size:clamp(30px,5vw,43px);line-height:1.22;letter-spacing:-.055em}.hero p{max-width:620px;color:var(--muted);font-size:15px;line-height:1.8;margin:0}.hero p strong{color:var(--ink);font-weight:700}.photo{width:152px;height:190px;object-fit:cover;object-position:center 28%;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 30px #18243a14}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.btn{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border:1px solid var(--line);border-radius:9px;font-size:12px;font-weight:700;transition:.15s}.btn:hover{border-color:#9fb4ea;background:var(--blue-soft);color:var(--blue)}.btn.primary{background:var(--ink);border-color:var(--ink);color:white}.btn.primary:hover{background:#293956}
+    section{padding-top:42px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:18px}.section-head h2{margin:0;font-size:22px;letter-spacing:-.04em}.section-head p{margin:0;color:var(--muted);font-size:12px}.projects{display:grid;gap:15px}.card{border:1px solid var(--line);border-radius:16px;padding:22px 24px;background:#fff}.card.featured{border-color:#d8e3ff;background:linear-gradient(135deg,#f8faff 0%,#fff 54%)}.card-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.labels{display:flex;flex-wrap:wrap;gap:7px;align-items:center}.pill{display:inline-flex;padding:5px 8px;border-radius:999px;background:#edf0f5;color:#506078;font-size:10px;font-weight:700}.pill.blue{background:#e7efff;color:var(--blue)}.pill.award{background:#e7f5ed;color:var(--green)}.card h3{margin:10px 0 5px;font-size:19px;letter-spacing:-.035em}.desc{margin:0;color:var(--muted);font-size:13px;line-height:1.65}.stack{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}.tag{padding:5px 8px;background:#f1f4f8;border-radius:6px;color:#4b5a70;font-size:10px;font-weight:600}.demo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.demo{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#0b1020}.demo video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#09090b}.demo figcaption{padding:9px 11px;background:#fff;color:#526176;font-size:11px;font-weight:600}.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.highlight{background:#fff;border:1px solid #e8edf4;border-radius:10px;padding:12px}.highlight b{display:block;margin-bottom:5px;font-size:12px}.highlight span{display:block;color:var(--muted);font-size:11px;line-height:1.6}.metric{color:var(--blue)!important;font-size:18px!important;font-weight:800;letter-spacing:-.04em}.note{margin:12px 0 0;color:#78869b;font-size:10px;line-height:1.6}.card-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;padding-top:14px;border-top:1px solid #e8edf4}.role{font-size:11px;color:#526176;line-height:1.6}.role strong{color:var(--ink)}.links{display:flex;gap:8px;flex-wrap:wrap}.text-link{font-size:11px;font-weight:700;color:var(--blue)}.text-link:hover{text-decoration:underline}.small-card{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}.small-card h3{font-size:16px}.small-card p{max-width:620px}.small-result{text-align:right;color:var(--muted);font-size:10px;line-height:1.6}.small-result strong{display:block;color:var(--ink);font-size:13px}
+    .bottom-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:15px}.info-card{padding:20px 22px;border:1px solid var(--line);border-radius:14px}.info-card h2{font-size:17px;margin:0 0 14px}.skill-groups{display:grid;gap:15px}.skill-label{margin-bottom:7px;color:var(--muted);font-size:10px;font-weight:700;letter-spacing:.04em}.chips{display:flex;flex-wrap:wrap;gap:7px}.chip{background:var(--soft);border:1px solid #edf0f5;border-radius:7px;padding:7px 9px;font-size:11px;color:#46556b}.chip.credential{background:#fff5db;border-color:#f2d58c;color:#805700;font-weight:800}.timeline{display:grid;gap:13px}.timeline-item{display:flex;justify-content:space-between;gap:10px;font-size:12px}.timeline-item strong{display:block;margin-bottom:3px}.timeline-item span{color:var(--muted);font-size:10px;white-space:nowrap}.timeline-item p{margin:0;color:var(--muted);font-size:11px}.contact{margin-top:40px;padding:22px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--muted);font-size:11px}.contact strong{color:var(--ink);font-size:13px}.contact-links{display:flex;gap:14px;flex-wrap:wrap}.contact-links a:hover{color:var(--blue)}
+    @media(max-width:680px){.wrap{width:min(100% - 30px,920px)}.nav{gap:12px;font-size:11px}.topbar-in{height:54px}.hero{grid-template-columns:1fr 100px;gap:18px;padding:24px 0 32px}.photo{width:96px;height:124px;border-radius:12px}.hero h1{font-size:30px}.hero p{font-size:13px}.actions{margin-top:16px}.btn{padding:9px 10px}.section-head p{display:none}.card{padding:18px}.demo-grid{grid-template-columns:1fr}.highlights{grid-template-columns:1fr}.highlight{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}.highlight b{margin:0}.highlight span{grid-column:1/-1}.metric{grid-column:2;grid-row:1}.small-card{grid-template-columns:1fr}.small-result{text-align:left}.bottom-grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.photo{object-position:center 25%}}
+    @media(max-width:390px){.nav{gap:8px;font-size:10px}.hero{grid-template-columns:1fr 82px}.photo{width:80px;height:108px}.hero h1{font-size:27px}}
   </style>
 </head>
-<body class="bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white">
-<!-- Minimal Header -->
-<header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-zinc-200 transition-all">
-<div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-<a class="font-semibold text-base tracking-tight flex items-center gap-2" href="#">
-<span class="">구동민</span>
-<span class="text-xs px-2 py-0.5 rounded-full bg-zinc-100 text-zinc-600 font-medium">AI Engineer</span>
-</a>
-<nav class="flex items-center gap-6 text-sm text-zinc-600">
-<a class="hover:text-zinc-950 transition-colors" href="#about">소개</a>
-<a class="hover:text-zinc-950 transition-colors" href="#projects">프로젝트</a>
-<a class="hover:text-zinc-950 transition-colors" href="#skills">기술 및 자격</a>
-<a class="hover:text-zinc-950 transition-colors" href="#contact">연락처</a>
-</nav>
-</div>
-</header>
-<main class="max-w-4xl mx-auto px-6 py-12 md:py-16 space-y-24">
-<!-- Hero / Profile Intro -->
-<section class="space-y-8" id="about">
-<div class="flex flex-col-reverse md:flex-row md:items-start justify-between gap-8 pt-4">
-<div class="space-y-4 max-w-2xl">
-<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-zinc-100 text-zinc-700 text-xs font-medium">
-<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
-            신입 AI / 데이터 개발자
-          </div>
-<h1 class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-950 leading-tight">
-            데이터와 시스템 검증으로 <br>
-            AI 모델을 안정적인 서비스로 연결합니다.
-          </h1>
-<p class="text-zinc-600 text-base leading-relaxed">
-            안녕하세요, 신입 AI 개발자 <strong class="text-zinc-900 font-semibold">구동민</strong>입니다.<br>
-            Python, FastAPI, MySQL 환경에서 LLM 추론과 백엔드 로직의 역할을 명확히 분리하고, 
-            철저한 데이터 검증과 테스트 코드를 통해 안정적인 API 서비스를 구현하는 데 집중합니다.
-          </p>
-<!-- Quick Action Buttons -->
-<div class="flex flex-wrap items-center gap-3 pt-2">
-<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 text-white text-xs font-medium hover:bg-zinc-800 transition-colors" href="https://github.com/rn1217/food-commerce-ai-assistant" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px]">code</span>
-              GitHub 바로가기
-            </a>
-<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg border border-zinc-200 text-zinc-700 text-xs font-medium hover:bg-zinc-50 transition-colors" onclick="copyToClipboard('jokuk88@naver.com', '이메일이 복사되었습니다.')">
-<span class="material-symbols-outlined text-[16px] text-zinc-500">mail</span>
-              jokuk88@naver.com 복사
-            </button>
-<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg border border-zinc-200 text-zinc-700 text-xs font-medium hover:bg-zinc-50 transition-colors" onclick="copyToClipboard('010-6379-0573', '연락처가 복사되었습니다.')">
-<span class="material-symbols-outlined text-[16px] text-zinc-500">call</span>
-              010-6379-0573
-            </button>
-</div>
-</div>
-<!-- Profile Photo -->
-<div class="shrink-0 flex items-center md:items-start">
-<div class="relative w-24 h-32 md:w-28 md:h-36 rounded-lg overflow-hidden border border-zinc-200 bg-zinc-100 shadow-sm">
-<img alt="구동민 프로필 사진" class="w-full h-full object-cover" src="portfolio-media/profile.jpg">
-</div>
-</div>
-</div>
-<!-- 핵심 지표 요약 (간결하게 3개로 축약) -->
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-zinc-100"><div class="p-4 rounded-lg bg-zinc-50 border border-zinc-200/70">
-<div class="text-xs text-zinc-500 font-medium">백엔드 &amp; API</div>
-<div class="text-xl font-bold text-zinc-900 mt-1">FastAPI &amp; REST API</div>
-<div class="text-xs text-zinc-500 mt-0.5">Pydantic 스키마 검증, 에러 핸들링 및 예외 처리 로직 구현</div>
-</div>
-<div class="p-4 rounded-lg bg-zinc-50 border border-zinc-200/70">
-<div class="text-xs text-zinc-500 font-medium">데이터베이스</div>
-<div class="text-xl font-bold text-zinc-900 mt-1">SQL &amp; RDBMS</div>
-<div class="text-xs text-zinc-500 mt-0.5">안전한 매개변수 바인딩(%s) 쿼리 및 인덱스 기반 데이터 정합성 설계</div>
-</div>
-<div class="p-4 rounded-lg bg-zinc-50 border border-zinc-200/70">
-<div class="text-xs text-zinc-500 font-medium">공인 데이터 자격</div>
-<div class="text-xl font-bold text-zinc-900 mt-1">SQLD · 빅데이터분석기사</div>
-<div class="text-xs text-zinc-500 mt-0.5">한국데이터산업진흥원 공인 취득, 관계형 모델링 및 통계 분석 기초 보유</div>
-</div></div>
-</section>
-<!-- Projects Section -->
-<section class="space-y-10" id="projects">
-<div class="border-b border-zinc-200 pb-3">
-<h2 class="text-xl font-bold text-zinc-950 tracking-tight">프로젝트</h2>
-<p class="text-xs text-zinc-500 mt-1">실제 해결한 문제와 검증 결과 중심으로 작성했습니다. 세부 문서는 저장소 링크에서 확인하실 수 있습니다.</p>
-</div>
-<!-- Project 1: 대표 프로젝트 -->
-<div class="border border-zinc-200 rounded-xl p-6 sm:p-8 space-y-6 hover:border-zinc-300 transition-colors">
-<!-- Title & Badges -->
-<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 border-b border-zinc-100 pb-4">
-<div>
-<div class="flex items-center gap-2">
-<span class="text-xs font-semibold px-2 py-0.5 rounded bg-zinc-900 text-white">Main Project</span>
-<span class="text-xs text-zinc-500">개인 MVP · 로컬 환경 구현</span>
-</div>
-<h3 class="text-2xl font-bold text-zinc-950 mt-1.5">Food Commerce AI Assistant</h3>
-<p class="text-sm text-zinc-600 mt-1">자연어 상품 검색 조건 구조화 및 RAG 기반 추천·FAQ 응답 로컬 백엔드 서비스</p>
-</div>
-<!-- Repository Link -->
-<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md border border-zinc-200 text-xs font-medium text-zinc-700 hover:bg-zinc-50 transition-colors shrink-0" href="https://github.com/rn1217/food-commerce-ai-assistant" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[15px]">open_in_new</span>
-            GitHub 저장소
-          </a>
-</div>
-<!-- Tech Stack Tags -->
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-700 text-xs font-mono">Python</span>
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-700 text-xs font-mono">FastAPI</span>
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-700 text-xs font-mono">MySQL</span>
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-700 text-xs font-mono">Gemini REST API</span>
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-700 text-xs font-mono">pandas</span>
-</div>
-<!-- Local demonstration videos -->
-<div class="space-y-3" id="demo-videos">
-<div class="flex flex-wrap items-center justify-between gap-2">
-<h4 class="text-sm font-semibold text-zinc-900">서비스 시연 영상</h4>
-<p class="text-xs text-zinc-500">무음 · 재생 버튼과 전체화면으로 확인하세요.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<figure class="overflow-hidden rounded-lg border border-zinc-200 bg-white">
-<div class="bg-zinc-950">
-<video controls muted playsinline preload="metadata" aria-label="상품 검색 및 AI 추천 시연 영상" class="block w-full aspect-video object-contain" style="background:#09090b">
-<source src="portfolio-media/product-silent.mp4" type="video/mp4">
-영상을 재생할 수 없다면 <a href="portfolio-media/product-silent.mp4">영상 파일을 열어주세요.</a>
-</video>
-</div>
-<figcaption class="p-3 space-y-1">
-<p class="text-sm font-semibold text-zinc-900">상품 검색 및 AI 추천</p>
-<p class="text-xs text-zinc-500 leading-relaxed">상품 조건 검색과 추천 결과를 확인할 수 있습니다.</p>
-<a class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800" href="portfolio-media/product-silent.mp4" target="_blank" rel="noopener noreferrer">영상 크게 열기<span class="material-symbols-outlined text-[14px]" aria-hidden="true">open_in_new</span></a>
-</figcaption>
-</figure>
-<figure class="overflow-hidden rounded-lg border border-zinc-200 bg-white">
-<div class="bg-zinc-950">
-<video controls muted playsinline preload="metadata" aria-label="FAQ 질문 및 답변 시연 영상" class="block w-full aspect-video object-contain" style="background:#09090b">
-<source src="portfolio-media/faq-silent.mp4" type="video/mp4">
-영상을 재생할 수 없다면 <a href="portfolio-media/faq-silent.mp4">영상 파일을 열어주세요.</a>
-</video>
-</div>
-<figcaption class="p-3 space-y-1">
-<p class="text-sm font-semibold text-zinc-900">FAQ 질문 및 답변</p>
-<p class="text-xs text-zinc-500 leading-relaxed">질문에 대한 답변과 참고한 FAQ를 확인할 수 있습니다.</p>
-<a class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800" href="portfolio-media/faq-silent.mp4" target="_blank" rel="noopener noreferrer">영상 크게 열기<span class="material-symbols-outlined text-[14px]" aria-hidden="true">open_in_new</span></a>
-</figcaption>
-</figure>
-</div>
-</div>
-<!-- Core Problem & Solution (간결하게 정리) -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
-<div class="space-y-2">
-<h4 class="font-semibold text-zinc-900 flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[18px] text-zinc-400">check_circle</span>
-              핵심 아키텍처 및 역할 분리
-            </h4>
-<ul class="text-zinc-600 space-y-1.5 text-xs leading-relaxed list-disc list-inside">
-<li class=""><strong>LLM 책임 한정:</strong> 자연어 질의에서 조건 JSON만 추출하도록 제한 (임의 SQL 생성 금지)</li>
-<li class=""><strong>보안 조회:</strong> 백엔드에서 매개변수 바인딩(<code class="font-mono bg-zinc-100 px-1 py-0.5 rounded">%s</code>)으로 SQL Injection 원천 방지</li>
-<li class=""><strong>사유 검증:</strong> 검색 상위 3개 상품의 ID와 LLM 추천 텍스트 내 ID의 일치 여부 후검증</li>
-<li class=""><strong>추적 체계:</strong> 모든 요청에 <code class="font-mono bg-zinc-100 px-1 py-0.5 rounded">request_id</code>를 부여하여 지연시간 및 장애 로그 기록</li>
-</ul>
-</div>
-<div class="space-y-2">
-<h4 class="font-semibold text-zinc-900 flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[18px] text-zinc-400">build</span>
-              주요 트러블슈팅 및 개선
-            </h4>
-<ul class="text-zinc-600 space-y-1.5 text-xs leading-relaxed list-disc list-inside">
-<li class=""><strong>문제:</strong> 복합 조건 질의 시 요청 동사('추천')가 미지원 속성으로 오분류되어 검색 실패</li>
-<li class=""><strong>해결:</strong> <code class="font-mono bg-zinc-100 px-1 py-0.5 rounded">ai_logs</code> 원인 분석 후 프롬프트에 요청 동사와 상품 속성 구분 규칙 및 예시 보강</li>
-<li class=""><strong>검증:</strong> 회귀 검증 3건 100% 통과 및 타임아웃 대비 1초 대기 재시도 정책 추가</li>
-</ul>
-</div>
-</div>
-<!-- Detail Links (상세 문서는 링크로 분리하여 복잡도 대폭 완화) -->
-<div class="p-3.5 rounded-lg bg-zinc-50 border border-zinc-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
-<div class="text-zinc-600">
-<span class="font-medium text-zinc-900">상세 기술 문서 &amp; 평가 보고서:</span>
-            세부 데이터 스키마 및 테스트 로그는 문서에서 확인하실 수 있습니다.
-          </div>
-<div class="flex flex-wrap items-center gap-2 shrink-0">
-<a class="px-2.5 py-1 rounded bg-white border border-zinc-200 text-zinc-700 hover:text-zinc-950 hover:border-zinc-300 font-mono text-[11px] transition-colors inline-flex items-center gap-1" href="https://github.com/rn1217/food-commerce-ai-assistant/blob/main/docs/architecture.md" rel="noopener noreferrer" target="_blank">
-<span class="">architecture.md</span>
-<span class="material-symbols-outlined text-[12px]">open_in_new</span>
-</a>
-<a class="px-2.5 py-1 rounded bg-white border border-zinc-200 text-zinc-700 hover:text-zinc-950 hover:border-zinc-300 font-mono text-[11px] transition-colors inline-flex items-center gap-1" href="https://github.com/rn1217/food-commerce-ai-assistant/blob/main/docs/erd.md" rel="noopener noreferrer" target="_blank">
-<span class="">erd.md</span>
-<span class="material-symbols-outlined text-[12px]">open_in_new</span>
-</a>
-<a class="px-2.5 py-1 rounded bg-white border border-zinc-200 text-zinc-700 hover:text-zinc-950 hover:border-zinc-300 font-mono text-[11px] transition-colors inline-flex items-center gap-1" href="https://github.com/rn1217/food-commerce-ai-assistant/blob/main/docs/evaluation/product-validation.md" rel="noopener noreferrer" target="_blank">
-<span class="">product-validation.md</span>
-<span class="material-symbols-outlined text-[12px]">open_in_new</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Project 2: 산학협력 프로젝트 DecaMind -->
-<div class="border border-zinc-200 rounded-xl p-6 sm:p-8 space-y-4 hover:border-zinc-300 transition-colors">
-<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 border-b border-zinc-100 pb-3">
-<div>
-<div class="flex items-center gap-2">
-<span class="text-xs font-semibold px-2 py-0.5 rounded bg-zinc-100 text-zinc-700">산학협력 캡스톤</span>
-<span class="text-xs text-zinc-500">오이솔루션 협력 (2025.06)</span>
-</div>
-<h3 class="text-xl font-bold text-zinc-950 mt-1">DecaMind : RAG 기반 산업 문서 검색 챗봇</h3>
-<p class="text-sm text-zinc-600 mt-0.5">사내 방대한 기술 규격서 및 절차서 탐색 지연 해소를 위한 벡터 검색 챗봇 인터페이스</p>
-</div>
-<div class="flex gap-1.5 shrink-0">
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-600 text-xs font-mono">React</span>
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-600 text-xs font-mono">Chroma DB</span>
-<span class="px-2 py-0.5 rounded bg-zinc-100 text-zinc-600 text-xs font-mono">REST API</span>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-zinc-600 pt-1">
-<div class="md:col-span-2 space-y-2">
-<h4 class="font-semibold text-zinc-900 text-sm">담당 역할</h4>
-<p class="leading-relaxed">
-              • <strong>React 챗봇 UI 구현:</strong> 대화형 세션 분기, 이전 히스토리 관리, Markdown 렌더링<br>
-              • <strong>API 규격 설계:</strong> 사내 실무진과 질의·문서 컨텍스트 JSON 통신 규격 및 예외 처리 표준화<br>
-              • <strong>검색 플로우 연동:</strong> 임베딩 유사도 검색 결과 및 원문 인용 데이터 바인딩
-            </p>
-</div>
-<div class="p-3.5 rounded-lg bg-zinc-50 border border-zinc-200/80 space-y-1.5">
-<h4 class="font-semibold text-zinc-900 text-sm">사내 임직원 검증 결과</h4>
-<div class="flex justify-between items-center text-xs py-1 border-b border-zinc-200/60 font-mono">
-<span class="">우수 / 보통</span>
-<span class="font-bold text-zinc-900">90.0% (36.7% / 53.3%)</span>
-</div>
-<p class="text-[11px] text-zinc-500 leading-tight">
-              부적절 응답 10%의 원인을 표·도면 청킹 유실로 파악하고 후속 메타데이터 필터링 방안을 도출했습니다.
-            </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Skills & Certificates Section -->
-<section class="space-y-6" id="skills">
-<div class="border-b border-zinc-200 pb-3">
-<h2 class="text-xl font-bold text-zinc-950 tracking-tight">기술 역량 및 자격</h2>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-<!-- Backend -->
-<div class="p-4 rounded-xl border border-zinc-200 bg-white space-y-2">
-<h3 class="text-sm font-bold text-zinc-900 flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[18px] text-zinc-400">terminal</span>
-            백엔드 및 언어
-          </h3>
-<p class="text-xs text-zinc-600 leading-relaxed">
-<strong>Python, FastAPI, Pydantic</strong><br>
-            RESTful API 설계, 요청 스키마 유효성 검증, 에러 핸들링 및 Mock 기반 단위 테스트 작성
-          </p>
-</div>
-<!-- Database -->
-<div class="p-4 rounded-xl border border-zinc-200 bg-white space-y-2">
-<h3 class="text-sm font-bold text-zinc-900 flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[18px] text-zinc-400">database</span>
-            데이터베이스 &amp; 파이프라인
-          </h3>
-<p class="text-xs text-zinc-600 leading-relaxed">
-<strong>MySQL, pandas, SQL</strong><br>
-            인덱스 및 제약 조건 스키마 설계, 매개변수 바인딩 안전 조회, 데이터 정합성 검증 파이프라인
-          </p>
-</div>
-<!-- AI & Certs -->
-<div class="p-4 rounded-xl border border-zinc-200 bg-white space-y-2">
-<h3 class="text-sm font-bold text-zinc-900 flex items-center gap-1.5">
-<span class="material-symbols-outlined text-[18px] text-zinc-400">verified</span>
-            AI 연동 &amp; 공인 자격
-          </h3>
-<p class="text-xs text-zinc-600 leading-relaxed">
-<strong>Gemini REST API, Chroma DB</strong><br>
-            자격: <strong>SQLD, 빅데이터분석기사</strong> 공인 취득<br>
-            관계형 모델링 및 통계 분석 기초 역량 보유
-          </p>
-</div>
-</div>
-</section>
-<!-- Education & Experience (간결 타임라인) -->
-<section class="space-y-6">
-<div class="border-b border-zinc-200 pb-3">
-<h2 class="text-xl font-bold text-zinc-950 tracking-tight">학력 및 교육 이력</h2>
-</div>
-<div class="space-y-3 text-xs text-zinc-600">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-lg border border-zinc-100 bg-zinc-50/50">
-<div>
-<span class="font-semibold text-zinc-900 text-sm">KB-Bridge AI 및 금융 데이터 분석 과정</span>
-<p class="text-zinc-500 mt-0.5">금융 데이터 집계 분석 및 AI 에이전트 연동 워크플로우 실습</p>
-</div>
-<span class="font-mono text-zinc-400 shrink-0 mt-1 sm:mt-0">2026.08 ~ 2026.11 (수료 예정)</span>
-</div>
-<div class="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-lg border border-zinc-100 bg-zinc-50/50">
-<div>
-<span class="font-semibold text-zinc-900 text-sm">전남대학교 소프트웨어전공</span>
-<p class="text-zinc-500 mt-0.5">AI융합대학 인공지능학부 소프트웨어전공 졸업</p>
-</div>
-<span class="font-mono text-zinc-400 shrink-0 mt-1 sm:mt-0">2021.03 ~ 2026.08 (졸업)</span>
-</div>
-</div>
-</section>
-<!-- Contact & Footer -->
-<section class="border-t border-zinc-200 pt-10 pb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 text-xs text-zinc-500" id="contact">
-<div>
-<p class="font-semibold text-zinc-900 text-sm">구동민 (Dongmin Koo)</p>
-<p class="mt-1">신입 AI / 데이터 개발자 • Gwangju, Korea</p>
-</div>
-<div class="flex items-center gap-4 font-mono">
-<button class="hover:text-zinc-900 transition-colors" onclick="copyToClipboard('jokuk88@naver.com', '이메일이 복사되었습니다.')">
-          jokuk88@naver.com
-        </button>
-<span class="">/</span>
-<button class="hover:text-zinc-900 transition-colors" onclick="copyToClipboard('010-6379-0573', '연락처가 복사되었습니다.')">
-          010-6379-0573
-        </button>
-<span class="">/</span>
-<a class="hover:text-zinc-900 transition-colors" href="https://github.com/rn1217/food-commerce-ai-assistant" rel="noopener noreferrer" target="_blank">
-          GitHub
-        </a>
-</div>
-</section>
+<body>
+<header class="topbar"><div class="wrap topbar-in"><a class="brand" href="#top">구동민</a><nav class="nav" aria-label="주요 메뉴"><a href="#projects">프로젝트</a><a href="#skills">기술</a><a href="#career">이력</a><a href="#contact">연락처</a></nav></div></header>
+<main class="wrap" id="top">
+  <section class="hero" aria-labelledby="intro-title">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>AI · DATA DEVELOPER</div>
+      <h1 id="intro-title">데이터와 검증으로<br>AI 기능을 서비스로 연결합니다.</h1>
+      <p>안녕하세요, 신입 AI 개발자 <strong>구동민</strong>입니다. Python·FastAPI·MySQL 기반으로 AI 기능을 구현하고, 테스트와 데이터 검증으로 동작을 확인합니다.</p>
+      <div class="actions"><a class="btn primary" href="https://github.com/rn1217/food-commerce-ai-assistant" target="_blank" rel="noopener noreferrer">대표 프로젝트 보기 ↗</a><a class="btn" href="mailto:jokuk88@naver.com">이메일 연락</a><a class="btn" href="https://github.com/rn1217" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    </div>
+    <img class="photo" src="portfolio-media/profile.png" alt="구동민 증명사진">
+  </section>
+
+  <section id="projects">
+    <div class="section-head"><h2>대표 프로젝트</h2><p>문제, 구현, 검증 결과 중심으로 정리했습니다.</p></div>
+    <div class="projects">
+      <article class="card featured">
+        <div class="card-top"><div><div class="labels"><span class="pill blue">개인 MVP</span><span class="pill">로컬 환경 구현</span></div><h3>Food Commerce AI Assistant</h3><p class="desc">자연어 상품 검색 조건을 구조화하고, 실제 상품·FAQ 데이터를 근거로 추천 설명과 답변을 제공하는 AI 서비스</p></div></div>
+        <div class="stack"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">MySQL</span><span class="tag">Gemini API</span><span class="tag">pandas</span></div>
+        <div class="demo-grid" aria-label="대표 프로젝트 시연 영상">
+          <figure class="demo">
+            <video controls muted playsinline preload="metadata" poster="portfolio-media/product-poster.png" aria-label="상품 검색 및 AI 추천 시연 영상">
+              <source src="portfolio-media/product-silent.mp4" type="video/mp4">
+              브라우저에서 영상을 재생할 수 없습니다.
+            </video>
+            <figcaption>상품 검색 및 AI 추천</figcaption>
+          </figure>
+          <figure class="demo">
+            <video controls muted playsinline preload="metadata" poster="portfolio-media/faq-poster.png" aria-label="FAQ 질문 및 답변 시연 영상">
+              <source src="portfolio-media/faq-silent.mp4" type="video/mp4">
+              브라우저에서 영상을 재생할 수 없습니다.
+            </video>
+            <figcaption>FAQ 질문 및 근거 출처 확인</figcaption>
+          </figure>
+        </div>
+        <div class="highlights">
+          <div class="highlight"><b>프롬프트 개선</b><span>요청 표현과 상품 조건을 구분하고 출력 형식을 조정</span></div>
+          <div class="highlight"><b>평가셋 비교</b><span>개발 평가셋 84문항에서 v1 대비 v2 개선 확인</span><span class="metric">82.1% → 95.2%</span></div>
+          <div class="highlight"><b>안전한 검색</b><span>검증된 조건과 매개변수 SQL로 상품 검색, FAQ는 근거 출처 표시</span></div>
+        </div>
+        <p class="note">개발 평가셋은 프롬프트 오답 분석에 사용한 84문항입니다. 별도 데이터에서의 일반화 성능을 의미하지 않습니다. 자동 테스트 66개 통과, 실제 MySQL 고정 검색 15/15 통과.</p>
+        <div class="card-foot"><div class="role"><strong>주요 작업</strong> · 자연어 조건 해석 개선, 프롬프트 버전 비교·평가, API와 데이터 검증</div><div class="links"><a class="text-link" href="https://github.com/rn1217/food-commerce-ai-assistant" target="_blank" rel="noopener noreferrer">GitHub 저장소 ↗</a><a class="text-link" href="https://github.com/rn1217/food-commerce-ai-assistant/blob/main/docs/evaluation/nl-eval-report.md" target="_blank" rel="noopener noreferrer">평가 보고서 ↗</a></div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div><div class="labels"><span class="pill award">최우수상</span><span class="pill">KB-Bridge 최종 프로젝트</span></div><h3>청충어람 · 충장로 상생기금</h3><p class="desc">충장로 공실 현황을 데이터로 살펴보고, 상생협약 참여 조건을 확인하는 서비스</p></div><a class="text-link" href="https://projects.kb-bridge.co.kr/projects/2/" target="_blank" rel="noopener noreferrer">프로젝트 보기 ↗</a></div>
+        <div class="card-foot"><div class="role"><strong>담당 역할</strong> · 충장로 상권 데이터 수집, 화면 설계 및 구현</div><div class="links"><span class="tag">공실 추정 지도</span><span class="tag">상생협약 안내</span><span class="tag">참여 조건 계산</span></div></div>
+      </article>
+
+      <article class="card small-card">
+        <div><div class="labels"><span class="pill">산학협력 캡스톤</span><span class="pill">오이솔루션 협력</span></div><h3>DecaMind · 산업 문서 RAG 챗봇</h3><p class="desc">기술 규격서와 절차서 검색을 돕는 챗봇 UI 및 API 통신 규격을 설계하고 검색 결과·원문 인용을 연결했습니다.</p><div class="stack"><span class="tag">React</span><span class="tag">Chroma DB</span><span class="tag">REST API</span></div></div>
+        <div class="small-result"><strong>임직원 검증 90.0%</strong>우수·보통 응답 비율</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bottom-grid" id="skills">
+    <div class="info-card"><h2>기술 및 자격</h2><div class="skill-groups"><div><div class="skill-label">기술</div><div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Pydantic</span><span class="chip">MySQL · SQL</span><span class="chip">pandas</span><span class="chip">Gemini API</span><span class="chip">RAG · Chroma DB</span></div></div><div><div class="skill-label">공인 자격</div><div class="chips"><span class="chip credential">SQLD</span><span class="chip credential">빅데이터분석기사</span></div></div></div></div>
+    <div class="info-card" id="career"><h2>학력 및 교육</h2><div class="timeline">
+      <div class="timeline-item"><div><strong>KB-Bridge AI 및 금융 데이터 분석 과정</strong><p>수료</p></div><span>2026.08–11</span></div>
+      <div class="timeline-item"><div><strong>전남대학교 소프트웨어전공</strong><p>AI융합대학 인공지능학부 졸업</p></div><span>2021.03–2026.08</span></div>
+    </div></div>
+  </section>
+
+  <footer class="contact" id="contact"><div><strong>구동민 · Dongmin Koo</strong><div style="margin-top:4px">신입 AI / 데이터 개발자 · Gwangju, Korea</div></div><div class="contact-links"><a href="mailto:jokuk88@naver.com">jokuk88@naver.com</a><a href="tel:01063790573">010-6379-0573</a><a href="https://github.com/rn1217" target="_blank" rel="noopener noreferrer">GitHub</a></div></footer>
 </main>
-<!-- Toast Notification -->
-<div class="fixed bottom-6 right-6 px-4 py-2.5 rounded-lg bg-zinc-900 text-white text-xs font-medium shadow-xl opacity-0 translate-y-3 pointer-events-none transition-all duration-200 flex items-center gap-2 z-50" id="toast">
-<span class="material-symbols-outlined text-[16px] text-emerald-400">check</span>
-<span id="toast-text" class="">복사되었습니다.</span>
-</div>
-<script>
-    function copyToClipboard(text, msg) {
-      if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function() {
-          showToast(msg);
-        });
-      } else {
-        var el = document.createElement('textarea');
-        el.value = text;
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
-        showToast(msg);
-      }
-    }
-
-    function showToast(msg) {
-      var toast = document.getElementById('toast');
-      var toastText = document.getElementById('toast-text');
-      if (!toast || !toastText) return;
-      toastText.textContent = msg;
-      toast.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
-      toast.classList.add('opacity-100', 'translate-y-0');
-      setTimeout(function() {
-        toast.classList.remove('opacity-100', 'translate-y-0');
-        toast.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
-      }, 2200);
-    }
-  </script>
-
-
-
-</body></html>
+</body>
+</html>
